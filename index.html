@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog CMS - Welcome</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">Blog CMS</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="getStartedBtn" class="btn-primary">Get Started</button>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Manage Your Blog Effortlessly</h1>
+      <p>Powerful, fast, and easy-to-use blog management system built for everyone.</p>
+      <button id="heroBtn" class="btn-primary">Get Started</button>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>📊 Dashboard</h3>
+        <p>Monitor all your blog posts and stats in one intuitive dashboard.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📝 Create & Edit</h3>
+        <p>Write, format, and publish posts seamlessly with our powerful editor.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📂 Organized Management</h3>
+        <p>Keep your content structured with category-based sorting and filtering.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need help? Reach out to us anytime.</p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>&copy; 2025 Blog CMS. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://web.facebook.com/login/?_rdc=1&_rdr#"><img src="631e161b3bcb9c040b2be271_facebook.1.webp" alt="Facebook"></a>
+      <a href="https://x.com/i/flow/login?lang=en-id"><img src="631e161eb54efcc85e35f8b0_twitter.1.webp" alt="X"></a>
+      <a href="https://www.instagram.com/accounts/login/?hl=en"><img src="631e161b7a1cf6cda0f62955_instagram.1.webp" alt="Instagram"></a>
+    </div>
+  </footer>
+
+  <!-- ===== AUTHENTICATION MODAL ===== -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="auth-tabs">
+        <button id="loginTab" class="active">Login</button>
+        <button id="signupTab">Sign Up</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="auth-form active">
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+
+      <!-- Signup Form -->
+      <form id="signupForm" class="auth-form">
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Blog CMS</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+  <header class="mobile-header">
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <h1 class="mobile-title">Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h2>Blog CMS</h2>
+      <ul>
+        <li><a href="dashboard.html">📊 Dashboard</a></li>
+        <li><a href="create.html">➕ Create Post</a></li>
+        <li><a href="#">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
+    <main class="main-content">
+      <h1>Dashboard</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="post-list"></tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

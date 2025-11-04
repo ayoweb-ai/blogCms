@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Post - Blog CMS</title>
+  <link rel="stylesheet" href="create.css" />
+</head>
+<body>
+
+  <header class="mobile-header">
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <h1 class="mobile-title">Create Post</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <h2>Blog CMS</h2>
+      <ul>
+        <li><a href="dashboard.html">📊 Dashboard</a></li>
+        <li><a href="create.html">➕ Create Post</a></li>
+        <li><a href="#">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
+    <main class="main-content">
+      <h1>Create a New Post</h1>
+      <form id="createForm">
+        <input type="text" id="title" placeholder="Post Title" required />
+        <input type="text" id="category" placeholder="Category" />
+        <textarea id="content" placeholder="Write your content here..." required></textarea>
+        <input type="file" id="image" accept="image/*" />
+        <div class="buttons">
+          <button type="submit">Publish</button>
+          <button type="button" id="saveDraft">Save as Draft</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="create.js"></script>
+</body>
+</html>
