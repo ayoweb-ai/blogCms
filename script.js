@@ -7,6 +7,17 @@ openBtns.forEach(btn => btn.addEventListener("click", () => modal.style.display 
 closeBtn.onclick = () => modal.style.display = "none";
 window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
 
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+
 // Auth tabs
 const loginTab = document.getElementById("loginTab");
 const signupTab = document.getElementById("signupTab");
